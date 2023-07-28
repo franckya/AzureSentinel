@@ -1,0 +1,5 @@
+// Find failed sign-in attempts in the last 24 hours
+SecurityEvent
+| where TimeGenerated >= ago(24h)
+| where EventID == 4625
+| project TimeGenerated, AccountName, IPAddress, Status, FailureReason
