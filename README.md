@@ -1,0 +1,2 @@
+# AzureSentinel
+Azure sentinel explained
